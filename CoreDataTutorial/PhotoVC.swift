@@ -29,7 +29,7 @@ class PhotoVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.width + 80
+        return view.frame.width + 100 //100 = sum of labels height + height of divider line
     }
 
 }

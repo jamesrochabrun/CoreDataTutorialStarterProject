@@ -88,6 +88,18 @@ class PhotoCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    func setPhotoCellWith(photo: Photo) {
+        
+        DispatchQueue.main.async {
+            self.authorLabel.text = photo.author
+            self.tagsLabel.text = photo.tags
+            if let url = photo.mediaURL {
+                self.photoImageview.loadImageUsingCacheWithURLString(url, placeHolder: UIImage(named: "placeholder"))
+            }
+        }
+    }
 }
 
 

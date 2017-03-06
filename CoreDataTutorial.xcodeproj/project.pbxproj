@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4DA3551E6B8BBB008CFF8A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DA3541E6B8BBB008CFF8A /* Extensions.swift */; };
 		7BD171121E67645E0012FF66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD171111E67645E0012FF66 /* AppDelegate.swift */; };
 		7BD171141E67645E0012FF66 /* PhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD171131E67645E0012FF66 /* PhotoVC.swift */; };
 		7BD1711A1E67645E0012FF66 /* CoreDataTutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BD171181E67645E0012FF66 /* CoreDataTutorial.xcdatamodeld */; };
 		7BD1711C1E67645E0012FF66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD1711B1E67645E0012FF66 /* Assets.xcassets */; };
 		7BD1711F1E67645E0012FF66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD1711D1E67645E0012FF66 /* LaunchScreen.storyboard */; };
 		7BD1712A1E6777D00012FF66 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD171291E6777D00012FF66 /* PhotoCell.swift */; };
+		7BD212EE1E6A267C00CE61D1 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD212ED1E6A267C00CE61D1 /* Service.swift */; };
+		7BD212F11E6A52D400CE61D1 /* Photo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD212EF1E6A52D400CE61D1 /* Photo+CoreDataClass.swift */; };
+		7BD212F21E6A52D400CE61D1 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD212F01E6A52D400CE61D1 /* Photo+CoreDataProperties.swift */; };
+		7BD212F41E6A53CB00CE61D1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD212F31E6A53CB00CE61D1 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B4DA3541E6B8BBB008CFF8A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7BD1710E1E67645E0012FF66 /* CoreDataTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD171111E67645E0012FF66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD171131E67645E0012FF66 /* PhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVC.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		7BD1711E1E67645E0012FF66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BD171201E67645E0012FF66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD171291E6777D00012FF66 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		7BD212ED1E6A267C00CE61D1 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		7BD212EF1E6A52D400CE61D1 /* Photo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7BD212F01E6A52D400CE61D1 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7BD212F31E6A53CB00CE61D1 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				7BD171111E67645E0012FF66 /* AppDelegate.swift */,
+				7B4DA3541E6B8BBB008CFF8A /* Extensions.swift */,
 				7BD171271E67779F0012FF66 /* Model */,
 				7BD171261E6777920012FF66 /* View */,
 				7BD171281E6777A50012FF66 /* Controller */,
@@ -79,6 +90,9 @@
 		7BD171271E67779F0012FF66 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7BD212EF1E6A52D400CE61D1 /* Photo+CoreDataClass.swift */,
+				7BD212F01E6A52D400CE61D1 /* Photo+CoreDataProperties.swift */,
+				7BD212F31E6A53CB00CE61D1 /* CoreDataStack.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -87,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7BD171131E67645E0012FF66 /* PhotoVC.swift */,
+				7BD212ED1E6A267C00CE61D1 /* Service.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -163,10 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD212F21E6A52D400CE61D1 /* Photo+CoreDataProperties.swift in Sources */,
+				7B4DA3551E6B8BBB008CFF8A /* Extensions.swift in Sources */,
+				7BD212F11E6A52D400CE61D1 /* Photo+CoreDataClass.swift in Sources */,
 				7BD1712A1E6777D00012FF66 /* PhotoCell.swift in Sources */,
 				7BD171141E67645E0012FF66 /* PhotoVC.swift in Sources */,
+				7BD212EE1E6A267C00CE61D1 /* Service.swift in Sources */,
 				7BD171121E67645E0012FF66 /* AppDelegate.swift in Sources */,
 				7BD1711A1E67645E0012FF66 /* CoreDataTutorial.xcdatamodeld in Sources */,
+				7BD212F41E6A53CB00CE61D1 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +340,7 @@
 				7BD171251E67645E0012FF66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
